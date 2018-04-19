@@ -1,4 +1,4 @@
-Here is the team report for our group MediaWiki for school!
+Here is the team report for our group Moinmoin wiki for school!
 
 --------------------------------------
 
@@ -6,7 +6,7 @@ Our team name: WikiNets
 
 --------------------------------------
 
-Service: We'll run a MediaWiki site deployment on a server and give detail on all required ports and services.
+Service: We'll run a Moinmoin wiki site deployment on a server and give detail on all required ports and services.
 
 --------------------------------------
 
@@ -14,7 +14,7 @@ Group roles: Here are some roles below with a bit of info on how each person wil
 
 * Research: Kasia
 
-For research we'll look into installation and deployment of Mediawiki, making sure that the compatibility and installation process runs smoothly and each group member is well-informed of the process and goals.
+For research we'll look into installation and deployment of Moinmoin wiki, making sure that the compatibility and installation process runs smoothly and each group member is well-informed of the process and goals.
 
 * Documentation: Ron
 
@@ -22,7 +22,7 @@ We'll make sure to thoroughly document as much of our group status and progress 
 
 * Testing: Yasir
 
-We'll run the MediaWiki and test each function. We'll comprehensively run deployment testing on each port and service to ensure the services work well. One of the main goals is to ensure uptime and functionality and notify other members of any issues.
+We'll run the Moinmoin wiki and test each function. We'll comprehensively run deployment testing on each port and service to ensure the services work well. One of the main goals is to ensure uptime and functionality and notify other members of any issues.
 
 * Support: Juan
 
@@ -34,7 +34,7 @@ Communication: We'll keep in touch both through weekly/bi-weekly meetings and al
 
 --------------------------------------
 
-Tasks needed to build: We are planning to rent a VPS or similar server to host and install the MediaWiki. We'll run this on a Linux server.
+Tasks needed to build: We are planning to rent a VPS or similar server to host and install the Moinmoin wiki. We'll run this on a Linux server.
 
 --------------------------------------
 
