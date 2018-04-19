@@ -34,7 +34,7 @@ Communication: We'll keep in touch both through weekly/bi-weekly meetings and al
 
 --------------------------------------
 
-Tasks needed to build: We are planning to rent a VPS or similar server to host and install the Moinmoin wiki. We'll run this on a Linux server.
+Tasks needed to build: We are planning to use our class server for installation and deployment of our wiki.
 
 --------------------------------------
 
