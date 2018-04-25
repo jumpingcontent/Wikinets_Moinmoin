@@ -39,10 +39,27 @@ Here's the resulting documentation for our troubleshooting and other issues.
 
 12. sudo nano moin.wsgi
 
+Below the import sys/ os line:
+
+sys.path.insert(0, '/usr/local/lib/python2.7/dist-packages/')
+
+sys.path.insert(0, '/usr/local/share/moin/')
+
 13. sudo nano uwsgi.ini
 
+Lines to add to the file:
+[uwsgi]
+uid = www-data
+gid = www-data
+socker = /usr/local/share/moin/moin.sock
+chmod-socket = 660
+logto = /var/log/uwsgi/uwsgi.logchdir = /usr/local/share/moin/
+wsgi-file = moin.wsgimaster
+workers = 3
+max-requests = 200
+harakiri = 30
+die-on-term
+
 // Creating the uwsgi.ini file
-
-
 
 --------------------------------------------
