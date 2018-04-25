@@ -48,17 +48,32 @@ sys.path.insert(0, '/usr/local/share/moin/')
 13. sudo nano uwsgi.ini
 
 Lines to add to the file:
+
+-----
+
 [uwsgi]
+
 uid = www-data
+
 gid = www-data
+
 socker = /usr/local/share/moin/moin.sock
+
 chmod-socket = 660
+
 logto = /var/log/uwsgi/uwsgi.logchdir = /usr/local/share/moin/
+
 wsgi-file = moin.wsgimaster
+
 workers = 3
+
 max-requests = 200
+
 harakiri = 30
+
 die-on-term
+
+-----
 
 // Creating the uwsgi.ini file
 
