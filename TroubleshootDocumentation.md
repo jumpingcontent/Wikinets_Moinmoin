@@ -39,11 +39,15 @@ Here's the resulting documentation for our troubleshooting and other issues.
 
 12. sudo nano moin.wsgi
 
+-----
+
 Below the import sys/ os line:
 
 sys.path.insert(0, '/usr/local/lib/python2.7/dist-packages/')
 
 sys.path.insert(0, '/usr/local/share/moin/')
+
+-----
 
 13. sudo nano uwsgi.ini
 
@@ -76,5 +80,49 @@ die-on-term
 -----
 
 // Creating the uwsgi.ini file
+
+14. sudo mkdir -p /var/log/uwsgi sudo chown www-data /var/log/uwsgi
+
+15. sudo nano /etc/init/moin.conf
+
+Add the lines below:
+
+-----
+
+description "moin uwsgi service"start on runlevel [2345]
+
+stop on runlevel [!2345]chdir /usr/local/share/moin
+
+exec /usr/local/bin/uwsgi /usr/local/share/moin/uwsgi.ini
+
+respawn
+
+-----
+
+// Config file
+
+16. cd /user/local/share/moin
+
+17. sudo cp config/wikiconfig.py
+
+18. sudo nano wikiconfig.py
+
+Changing the file lines:
+
+-----
+
+sitename = u'Wikinet'page_front_page = u"FrontPage"
+
+superuser = [u"Admin", ]
+
+-----
+
+19. sudo chown -R www-data: /usr/local/share/moin sudo chmod -R 775 /usr/local/share/moin
+
+20. sudo start moin
+
+// We're currently at this step
+
+// The MoinMoin status is showing as inactive
 
 --------------------------------------------
