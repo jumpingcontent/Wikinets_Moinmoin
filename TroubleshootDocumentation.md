@@ -11,33 +11,13 @@ Here's the resulting documentation for our troubleshooting and other issues.
 
 2. sudo apt-get upgrade
 
-3. install apache2
-
-4. sudo apt-get install python-pip python-dev
-
-// Installing pip (the python package manager)
-
-5. sudo pip install http://projects.unbit.it/downloads/uwsgi-lts.tar.gz
-
-// Ready to proceed to download moinmoin
-
-6. wget http://static.moinmo.in/files/moin-1.9.9.tar.gz
-
-// Downloading MoinMoin from https://moinmo.in/MoinMoinDownload
-
-7. tar -zxvf moin-1.9.9.tar.gz
-
-8. cd moin-1.9.9
-
-9. sudo python setup.py install --prefix=/usr/local
-
-10. cd /usr/local/share/moin
+3. cd /usr/local/share/moin
 
 // Changing to the directory
 
-11. sudo cp server/moin.wsgi
+4. sudo cp server/moin.wsgi
 
-12. sudo nano moin.wsgi
+5. sudo nano moin.wsgi
 
 -----
 
@@ -49,7 +29,7 @@ sys.path.insert(0, '/usr/local/share/moin/')
 
 -----
 
-13. sudo nano uwsgi.ini
+6. sudo nano uwsgi.ini
 
 Lines to add to the file:
 
@@ -81,9 +61,9 @@ die-on-term
 
 // Creating the uwsgi.ini file
 
-14. sudo mkdir -p /var/log/uwsgi sudo chown www-data /var/log/uwsgi
+7. sudo mkdir -p /var/log/uwsgi sudo chown www-data /var/log/uwsgi
 
-15. sudo nano /etc/init/moin.conf
+8. sudo nano /etc/init/moin.conf
 
 Add the lines below:
 
@@ -101,11 +81,11 @@ respawn
 
 // Config file
 
-16. cd /user/local/share/moin
+9. cd /user/local/share/moin
 
-17. sudo cp config/wikiconfig.py
+10. sudo cp config/wikiconfig.py
 
-18. sudo nano wikiconfig.py
+11. sudo nano wikiconfig.py
 
 Changing the file lines:
 
@@ -117,11 +97,11 @@ superuser = [u"Admin", ]
 
 -----
 
-19. sudo chown -R www-data: /usr/local/share/moin sudo chmod -R 775 /usr/local/share/moin
+12. sudo chown -R www-data: /usr/local/share/moin sudo chmod -R 775 /usr/local/share/moin
 
 // Changing permissions
 
-20. sudo start moin
+13. sudo start moin
 
 // We're currently at this step
 
