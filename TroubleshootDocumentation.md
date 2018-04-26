@@ -111,7 +111,7 @@ Changing the file lines:
 
 -----
 
-sitename = u'Wikinet'page_front_page = u"FrontPage"
+sitename = u'Wikinet'page_front_page = u"moinwiki"
 
 superuser = [u"Admin", ]
 
