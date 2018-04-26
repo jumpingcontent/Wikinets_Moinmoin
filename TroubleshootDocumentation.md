@@ -119,10 +119,22 @@ superuser = [u"Admin", ]
 
 19. sudo chown -R www-data: /usr/local/share/moin sudo chmod -R 775 /usr/local/share/moin
 
+// Changing permissions
+
 20. sudo start moin
 
 // We're currently at this step
 
-// The MoinMoin status is showing as inactive
+// The MoinMoin status is still showing as inactive
+
+* We're currently troubleshooting the issue of the inactive status of this MoinMoin
 
 --------------------------------------------
+
+
+**Start Status Issue:**
+
+( )
+
+
+-----
