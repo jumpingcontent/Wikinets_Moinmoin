@@ -8,6 +8,8 @@ Rather than re-forking the forked Wikinets Research repo that we made, we'll hav
 
 We made a good attempt to install Mediawiki but for this project we've decided Moinmoin is a better option. Attached in this repo are files related to our attempt that I've placed an 'archive' style filename tag to.
 
+// Sadly this Moinmoin attempt didn't work and thus I've given each file here archive tags for reference later. Below is the final and successful attempt for our project.
+
 **Here's a link to our third and final attempt: https://github.com/jumpingcontent/Postfixers**
 
 **// This attempt looks to be successful!**
